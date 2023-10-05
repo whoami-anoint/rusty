@@ -8,4 +8,12 @@ fn main(){
     // println!("{}",three);
     // println!("{}",four);
 
+    let five = 1i32;
+    println!("{} -byte",std::mem::size_of_val(&five));
+    let six = 2i16;
+    println!("{} -byte",std::mem::size_of_val(&six));
+
+    let seven = five as i8;
+    println!("{} -byte",std::mem::size_of_val(&seven));
 }
+
