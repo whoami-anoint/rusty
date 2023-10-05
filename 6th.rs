@@ -9,4 +9,10 @@ fn main() {
     }
 
     println!("The value of x is {} and value of y is {}", x, y);
+
+    let a = 20;
+    let b = 30;
+    let c = 60;
+    let sum = a + b + c;
+    println!("{}",sum);
 }
