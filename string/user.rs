@@ -1,6 +1,7 @@
-pub use std::io;
-
+use std::io;
 fn main(){
-    let user = String::new();
-    println!("{}",user);
+    let mut name = String::new();
+    println!("Enter your Name");
+    io::stdin().read_line(&mut name).expect("Error in name");
+    println!("Good evening {}",name)
 }
